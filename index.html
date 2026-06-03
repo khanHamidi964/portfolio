@@ -481,11 +481,14 @@
                 <!-- Contact Form -->
 <form class="contact-form" action="https://formsubmit.co/pskh.khan.964@gmail.com" method="POST">
 
-    <!-- Disable captcha (important for testing) -->
+    <!-- disable captcha -->
     <input type="hidden" name="_captcha" value="false">
 
-    <!-- Optional: custom subject -->
-    <input type="hidden" name="_subject" value="New Portfolio Message!">
+    <!-- stay on same page after submit -->
+    <input type="hidden" name="_next" value="https://yourwebsite.com/#contact">
+
+    <!-- email subject -->
+    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
     <div class="input-box">
         <input type="text" name="name" required>
